@@ -3,18 +3,19 @@
     "outDir": "./dist/",
     /*не даёт указывать переменные без типа, даже any нажо указать явно*/
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "ESNext",
     /* то в какую версию компилируется код для поддержки в браузерах*/
     "target": "es5",
     /*Для обработки JSX*/
-    "jsx": "react",
+    "jsx": "react-jsx",
     /* Будут обрабатываться не только TS файлы, но и JS*/
     "allowJs": true,
     "moduleResolution": "node",
     /*Позволяют делать привычные импорты без *as */
     "esModuleInterop": true,
     /*Позволяет делать дефолтный импорт или именной*/
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+
   },
   "ts-node": {
     "compilerOptions": {
