@@ -35,6 +35,6 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         },
 
         /*Убирает необходимость при экспорте добавлять расширение файла, т.е. import 'app',  не 'app.ts'*/
-        resolve: buildResolvers(),
+        resolve: buildResolvers(options),
     }
 }

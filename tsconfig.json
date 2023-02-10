@@ -11,10 +11,15 @@
     /* Будут обрабатываться не только TS файлы, но и JS*/
     "allowJs": true,
     "moduleResolution": "node",
+    //Для абсолютного импорта
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     /*Позволяют делать привычные импорты без *as */
     "esModuleInterop": true,
     /*Позволяет делать дефолтный импорт или именной*/
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
 
   },
   "ts-node": {
