@@ -19,12 +19,12 @@
     /*Позволяют делать привычные импорты без *as */
     "esModuleInterop": true,
     /*Позволяет делать дефолтный импорт или именной*/
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
 
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
 }
