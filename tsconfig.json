@@ -16,6 +16,7 @@
     "paths": {
       "*": ["./src/*"]
     },
+
     /*Позволяют делать привычные импорты без *as */
     "esModuleInterop": true,
     /*Позволяет делать дефолтный импорт или именной*/
@@ -24,7 +25,11 @@
   },
   "ts-node": {
     "compilerOptions": {
+      "baseUrl": "src/",
       "module": "CommonJS"
     }
   },
+  "include": [
+    "./config/jest/setupTest.ts","src"
+  ],
 }
