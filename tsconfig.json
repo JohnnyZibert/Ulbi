@@ -25,11 +25,12 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "baseUrl": "src/",
       "module": "CommonJS"
     }
   },
   "include": [
-    "./config/jest/setupTest.ts","src"
+    "./config/jest/setupTest.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
   ],
 }

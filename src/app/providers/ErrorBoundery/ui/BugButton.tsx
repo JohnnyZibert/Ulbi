@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Для тестирования errorBoundary
 
@@ -13,12 +14,14 @@ export const BugButton = () => {
             throw Error;
         }
     }, [error]);
+    const { t } = useTranslation();
 
     return (
         <button
+            type="button"
             onClick={onThrow}
         >
-            Trow Error
+            {t('Trow Error')}
         </button>
     );
 };
