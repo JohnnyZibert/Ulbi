@@ -1,4 +1,3 @@
-import './styles/index.scss';
 import useTheme from 'app/providers/ThemeProvider/lib/useTheme';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar/ui/Navbar';
@@ -14,6 +13,7 @@ const App = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback={<PageLoader />}>
                 <Navbar />
+
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
