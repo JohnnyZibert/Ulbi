@@ -10,11 +10,11 @@ export interface LoginFormProps {
 }
 
 export const LoginForm = ({ className }:LoginFormProps) => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('modalForm');
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
-            <Input type="text" className={cls.input} placeholder="Введите имя" />
-            <Input type="text" className={cls.input} placeholder="Введите пароль" />
+            <Input type="text" className={cls.input} placeholder={t('Введите имя')} />
+            <Input type="text" className={cls.input} placeholder={t('Введите пароль')} />
             <Button className={cls.loginBtn}>{t('Войти')}</Button>
         </div>
     );
