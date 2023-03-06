@@ -7,5 +7,7 @@
   "О сайте": "About us",
   "Переключить":"Toggle",
   "Короткий язык": "En",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Вы ввели не верный логин или пароль": "Uncorrected username or password",
+  "Выйти": "Logout"
 }

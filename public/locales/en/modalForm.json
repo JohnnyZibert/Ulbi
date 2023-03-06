@@ -1,5 +1,6 @@
 {
   "Введите имя": "Username",
   "Введите пароль": "Password",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Форма аторизации": "Authorization form"
 }
